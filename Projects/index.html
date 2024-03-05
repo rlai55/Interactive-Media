@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamA web</title>
+  <style>
+    /* 导航栏样式 */
+    nav {
+      background-color: #add8e6; /* 淡蓝色背景 */
+      padding: 10px; /* 在导航栏内部添加一些填充 */
+    }
+
+    /* 导航栏标题样式 */
+    nav h1 {
+      font-weight: bold; /* 标题加粗 */
+      margin: 0; /* 移除默认的外边距 */
+    }
+
+    /* 导航链接样式 */
+    nav a {
+      text-decoration: none; /* 移除下划线 */
+      color: black; /* 设置链接颜色 */
+      margin-right: 20px; /* 设置链接之间的间距 */
+    }
+
+    /* 链接 - 鼠标悬停时的样式 */
+    nav a:hover {
+      text-decoration: underline; /* 鼠标悬停时下划线 */
+    }
+    /* 容器样式，用于横向排列图片 */
+    .profile-container {
+      display: flex;
+      justify-content: space-around; /* 在项目之间平均分配空间 */
+      flex-wrap: wrap; /* 允许项目在必要时换行 */
+    }
+
+/* 单个配置文件样式 */
+    .profile {
+      text-align: center; /* 将文本和图片居中对齐 */
+      margin: 20px; /* 添加一些外边距 */
+    }
+
+/* 图片样式 */
+    .profile img {
+      width: 100%; /* 使图片宽度填充容器 */
+      max-width: 200px; /* 限制图片的最大宽度 */
+      height: auto; /* 保持图片的原始宽高比 */
+    }
+
+  </style>
 </head>
 <body>
-    
+  <nav>
+    <h1>TeamA web</h1>
+    <a href="#">member</a>
+    <a href="#">research</a>
+    <a href="#">contact</a>
+  </nav>
+
+  <div class="profile-container">
+    <div class="profile">
+      <img src="emptyprofile.png" alt="Profile 1">
+      <p>Name: Bradley</p>
+      <p>Age: 20</p>
+      <p>Major: Design</p>
+    </div>
+    <div class="profile">
+      <img src="emptyprofile.png" alt="Profile 2">
+      <p>Name: Example Name</p>
+      <p>Age: 21</p>
+      <p>Major: Example Major</p>
+    </div>
+    <div class="profile">
+      <img src="emptyprofile.png" alt="Profile 3">
+      <p>Name: Example Name 1</p>
+      <p>Age: 22</p>
+      <p>Major: Example Major 1</p>
+    </div>
+    <div class="profile">
+      <img src="emptyprofile.png" alt="Profile 4">
+      <p>Name: Example Name 2</p>
+      <p>Age: 23</p>
+      <p>Major: Example Major 2</p>
+    </div>
+  </div>
+  
+
 </body>
 </html>
