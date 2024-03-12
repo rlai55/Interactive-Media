@@ -12,6 +12,9 @@ body, html {
 }
 
 .book {
+    background-image: url(image/book.png);
+    background-size: cover;
+    background-position: center;
     position: relative;
     width: 80%;
     margin: 20px auto;
@@ -30,13 +33,14 @@ body, html {
 .tab {
     background-color: #f0f0f0;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .tab:hover, .tab.active {
-    transform: scale(1.2); /* 放大激活或鼠标悬停的标签 */
+    transform: scale(1.5); /* 放大激活或鼠标悬停的标签 */
 }
 
 .tab:not(.active):hover {
@@ -46,6 +50,7 @@ body, html {
 .content {
     flex-grow: 1;
     padding: 20px;
+    margin: 60px;
 }
 
 .container {
@@ -126,4 +131,9 @@ body, html {
     color: #000;
     opacity: 0;
     transition: opacity 0.5s ease-out;
+}
+
+.book-image{
+    width: 500px;
+    height: auto;
 }
