@@ -7,6 +7,46 @@ body, html {
     margin-bottom: 800px;
 }
 
+.breadcrumbs {
+    padding: 10px;
+}
+
+.book {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* 模拟书的阴影 */
+    display: flex;
+}
+
+.tabs {
+    position: absolute;
+    left: -40px; /* 根据实际情况调整 */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tab:hover, .tab.active {
+    transform: scale(1.2); /* 放大激活或鼠标悬停的标签 */
+}
+
+.tab:not(.active):hover {
+    background-color: #e0e0e0;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
 
 .container {
     background-color: #e1ecee;
@@ -16,7 +56,7 @@ body, html {
 }
 
 .background-image {
-    background-image: url('image/MSD.jpg');
+    background-image: url('image/bgp.png');
     background-position: center;
     background-size: cover;
     flex: 5;
