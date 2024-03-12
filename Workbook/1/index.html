@@ -9,12 +9,37 @@
 <body>
   <div class="container">
       <div class="background-image">
-          <div>INFO30008</div>
-          <div>Ruizhe Lai</div>
+        <div class="text-large">Ruizhe Lai</div>  
+        <div class="text-small">INFO30008</div>
       </div>
       <div class="workbook-title">
-          <h1>My Workbook</h1>
+          <div class="text-underline"><h1>My Workbook</h1></div>
+          <div class="arrow">&#x2193;</div>
       </div>
   </div>
+  <div class="links">
+    <a href="#week1" class="link">WEEK 1</a>
+    <a href="#week2" class="link">WEEK 2</a>
+    <a href="#week3" class="link">WEEK 3</a>
+  </div>
 </body>
+<script>
+  window.addEventListener('scroll', function() {
+      const windowHeight = window.innerHeight;
+      const links = document.querySelectorAll('.link');
+      const linksContainer = document.querySelector('.links'); // 获取.links容器
+
+      links.forEach((link, index) => {
+          const linkTop = link.getBoundingClientRect().top;
+
+          if (linkTop < windowHeight - 50) {
+              setTimeout(() => {
+                  link.style.opacity = 1; // 显示链接
+                  linksContainer.style.opacity = 1; // 确保容器也是可见的
+              }, index * 500);
+          }
+      });
+  });
+</script>
+
 </html>
