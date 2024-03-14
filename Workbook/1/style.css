@@ -8,7 +8,8 @@ body, html {
 }
 
 .breadcrumbs {
-    padding: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 .book {
@@ -17,7 +18,7 @@ body, html {
     background-position: center;
     position: relative;
     width: 80%;
-    margin: 20px auto;
+    margin: 50px auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* 模拟书的阴影 */
     display: flex;
 }
@@ -41,7 +42,7 @@ body, html {
 }
 
 .tab:hover, .tab.active {
-    background-color: #007bff;
+    background-color: #464646;
     color: white;
     transform: scale(1.5); /* 放大激活或鼠标悬停的标签 */
 }
@@ -56,7 +57,8 @@ body, html {
 .content {
     flex-grow: 1;
     padding: 20px;
-    margin: 60px;
+    margin-top: 10px;
+    margin-left: 60px;
 }
 
 .container {
@@ -141,5 +143,36 @@ body, html {
 
 .book-image{
     width: 500px;
+    height: auto;
+}
+
+.home-icon {
+    position: fixed; /* 或者使用absolute，取决于布局需求 */
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* 确保图标位于页面其他元素之上 */
+  }
+  
+  .home-icon a img {
+    width: 80px; 
+    height: auto;
+    transition: opacity 0.3s ease-in-out; 
+  }
+  
+  .home-icon a:hover img {
+    opacity: 0.7; 
+  }
+
+  .homepage-deco img {
+    width: 1600px; 
+    height: auto; 
+    position: absolute; 
+    top: 710px; 
+    left: 45px; 
+    z-index: -1;
+}
+
+.book-icon {
+    width: 100px;
     height: auto;
 }
