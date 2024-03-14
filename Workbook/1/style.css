@@ -3,8 +3,8 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #e1ecee;
-    margin-bottom: 800px;
+    background-color: #dedede;
+    margin-bottom: 680px;
 }
 
 .breadcrumbs {
@@ -31,7 +31,8 @@ body, html {
 }
 
 .tab {
-    background-color: #f0f0f0;
+    background-color: white;
+    text-decoration: none;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -40,12 +41,17 @@ body, html {
 }
 
 .tab:hover, .tab.active {
+    background-color: #007bff;
+    color: white;
     transform: scale(1.5); /* 放大激活或鼠标悬停的标签 */
 }
 
+
 .tab:not(.active):hover {
-    background-color: #e0e0e0;
+    background-color: white;
+    color: black;
 }
+
 
 .content {
     flex-grow: 1;
@@ -54,7 +60,7 @@ body, html {
 }
 
 .container {
-    background-color: #e1ecee;
+    background-color: #dedede;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -72,7 +78,7 @@ body, html {
 }
 
 .text-large {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -90,7 +96,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .text-underline {
@@ -126,7 +132,7 @@ body, html {
     display: block;
     margin: 20px 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     text-decoration: underline;
     color: #000;
     opacity: 0;

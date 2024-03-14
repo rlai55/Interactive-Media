@@ -6,6 +6,7 @@
   <title>Brad Workbook</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<body>
   <div class="container">
       <div class="background-image">
         <div class="text-large">Ruizhe Lai</div>  
@@ -26,7 +27,7 @@
   window.addEventListener('scroll', function() {
       const windowHeight = window.innerHeight;
       const links = document.querySelectorAll('.link');
-      const linksContainer = document.querySelector('.links'); // 获取.links容器
+      const linksContainer = document.querySelector('.links'); // links container
 
       links.forEach((link, index) => {
           const linkTop = link.getBoundingClientRect().top;
