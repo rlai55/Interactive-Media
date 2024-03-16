@@ -8,58 +8,39 @@ body, html {
 }
 
 .breadcrumbs {
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
+
 
 .book {
     background-image: url(image/book.png);
     background-size: cover;
     background-position: center;
     position: relative;
-    width: 80%;
-    margin: 50px auto;
+    width: 100%;
+    margin: 20px auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     display: flex;
 }
 
-.tabs {
-    position: absolute;
-    left: -40px; 
-    top: 0;
-    display: flex;
-    flex-direction: column;
+
+.page-left, .page-right {
+    width: 50%;
+    margin: 0 10px; 
+    padding: 20px; 
+    background-color: white; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); 
+    box-sizing: border-box;
+    height: 700px;
+    overflow-y: auto;
+    position: relative;
 }
 
-.tab {
-    background-color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.tab:hover, .tab.active {
-    background-color: #464646;
-    color: white;
-    transform: scale(1.5); 
-}
-
-
-.tab:not(.active):hover {
-    background-color: white;
-    color: black;
-}
-
-
-.content {
-    flex-grow: 1;
-    padding: 20px;
-    margin-top: 10px;
-    margin-left: 60px;
-}
 
 .container {
     background-color: #dedede;
@@ -72,7 +53,7 @@ body, html {
     background-image: url('image/bgp.png');
     background-position: center;
     background-size: cover;
-    flex: 5;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,12 +74,20 @@ body, html {
 }
 
 .workbook-title {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 15vh;
     align-items: center;
-    font-size: 28px;
+    justify-content: center;
+}
+
+.workbook-title h1 {
+    margin: 0;
+    margin-right: 8px;
+}
+
+.book-icon {
+    width: 40px;
+    height: auto;
 }
 
 .text-underline {
@@ -107,7 +96,9 @@ body, html {
 
 .arrow {
     font-size: 24px;
+    margin-top: 10px;
     animation: bounce 2s infinite;
+    margin: 10px auto
 }
 
 @keyframes bounce {
@@ -146,33 +137,61 @@ body, html {
     height: auto;
 }
 
-.home-icon {
-    position: fixed; 
-    top: 10px;
-    left: 10px;
-    z-index: 1000; 
-  }
-  
-  .home-icon a img {
-    width: 80px; 
-    height: auto;
-    transition: opacity 0.3s ease-in-out; 
-  }
-  
-  .home-icon a:hover img {
-    opacity: 0.7; 
-  }
-
-  .homepage-deco img {
-    width: 1600px; 
-    height: auto; 
-    position: absolute; 
-    top: 710px; 
-    left: 45px; 
-    z-index: -1;
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 5px 10px;
 }
 
-.book-icon {
-    width: 100px;
+.home-icon img {
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1; 
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 60px; 
+    font-weight: normal;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    font-weight: bolder;
+    background-color: #4A4A4A;
+    padding: 10px 60px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.top-left, .bottom-right {
+    display: flex;
+    background-color: #ebebeb; 
+}
+
+.bottom-left, .top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    width: 100%;
     height: auto;
 }
