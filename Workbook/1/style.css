@@ -19,13 +19,13 @@ body, html {
     position: relative;
     width: 80%;
     margin: 50px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* 模拟书的阴影 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     display: flex;
 }
 
 .tabs {
     position: absolute;
-    left: -40px; /* 根据实际情况调整 */
+    left: -40px; 
     top: 0;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ body, html {
 .tab:hover, .tab.active {
     background-color: #464646;
     color: white;
-    transform: scale(1.5); /* 放大激活或鼠标悬停的标签 */
+    transform: scale(1.5); 
 }
 
 
@@ -147,10 +147,10 @@ body, html {
 }
 
 .home-icon {
-    position: fixed; /* 或者使用absolute，取决于布局需求 */
+    position: fixed; 
     top: 10px;
     left: 10px;
-    z-index: 1000; /* 确保图标位于页面其他元素之上 */
+    z-index: 1000; 
   }
   
   .home-icon a img {
