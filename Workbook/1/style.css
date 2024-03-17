@@ -182,7 +182,11 @@ body, html {
 
 .top-left, .bottom-right {
     display: flex;
-    background-color: #ebebeb; 
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 18px;
+    font-family: "Marcellus", serif;
+    font-style: normal;
 }
 
 .bottom-left, .top-right {
@@ -191,7 +195,23 @@ body, html {
     align-items: center;
 }
 
-.content img {
-    width: 100%;
+.img1 {
+    width: 420px;
+    height: auto;
+}
+
+.img2 {
+    width: 400px;
+    height: auto;
+}
+
+.img3 {
+    width: 260px;
+    height: auto;
+
+}
+
+.img4 {
+    width: 200px;
     height: auto;
 }
