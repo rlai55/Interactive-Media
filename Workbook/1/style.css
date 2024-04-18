@@ -196,6 +196,11 @@ body, html {
     align-items: center;
 }
 
+.bottom-left video{
+    width: 100%;
+    height: auto;
+}
+
 .img1 {
     width: 420px;
     height: auto;
