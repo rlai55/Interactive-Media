@@ -216,3 +216,9 @@ body, html {
     width: 200px;
     height: auto;
 }
+
+#sketch-holder {
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+}
