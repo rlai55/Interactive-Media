@@ -5,8 +5,9 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     background-color: #dedede;
-    margin-bottom: 680px;
+    padding-bottom: 50px;
 }
+
 
 .breadcrumbs {
     margin-top: 20px;
@@ -117,20 +118,24 @@ body, html {
 
 .links {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center; 
     opacity: 0;
     transition: opacity 0.5s;
+    width: 100%; 
 }
 
 .link {
     display: block;
     margin: 20px 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     text-decoration: underline;
     opacity: 0;
     transition: opacity 0.5s ease-out;
+    width: 30%; 
+    min-width: 200px; 
 }
 
 .book-image{
@@ -159,7 +164,7 @@ body, html {
 
 .nav-links a {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     padding: 0 60px; 
     font-weight: normal;
